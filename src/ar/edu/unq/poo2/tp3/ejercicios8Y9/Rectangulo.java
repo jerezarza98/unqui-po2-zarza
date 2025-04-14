@@ -1,6 +1,6 @@
 package ar.edu.unq.poo2.tp3.ejercicios8Y9;
 
-public class Rectangulo {
+abstract class Rectangulo {
 	private int base, altura;
 	private Point ubicacion;
 	
@@ -26,9 +26,7 @@ public class Rectangulo {
 		return this.base * this.altura;
 	}
 	
-	public int getPerimetro() {
-		return (2*this.base) + (2*this.altura);
-	}
+	public abstract int getPerimetro();
 	
 	public boolean esHorizontal() {
 		return this.base > this.altura;

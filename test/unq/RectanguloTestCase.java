@@ -1,23 +1,26 @@
 package unq;
 
+
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import ar.edu.unq.poo2.tp3.ejercicios8Y9.*;
 
-import ar.edu.unq.poo2.tp3.ejercicios8Y9.Point;
-import ar.edu.unq.poo2.tp3.ejercicios8Y9.Rectangulo;
 
 class RectanguloTestCase {
 	
 	private Point ubicacion;
-	private Rectangulo rectangulo;
+	private RectanguloConcreto rectangulo;
+	private Point ubicacionCuadrado;
+	private Cuadrado cuadrado;
 	
 	@BeforeEach
 	public void setUp() throws Exception {
 	    ubicacion = new Point(3, 8);
-		rectangulo = new Rectangulo(7, 4, ubicacion);
-		
+		rectangulo = new RectanguloConcreto(7, 4, ubicacion);
+		ubicacionCuadrado = new Point(6, 9);
+		cuadrado = new Cuadrado(4, ubicacionCuadrado);
 	}
 
 	@Test
@@ -47,9 +50,19 @@ class RectanguloTestCase {
 	 
 	 @Test
 	 void testUnRectanguloEsVertical() {
-		 Rectangulo otroRectangulo = new Rectangulo(3, 9, new Point());
+		 RectanguloConcreto otroRectangulo = new RectanguloConcreto(3, 9, new Point());
 		 
 		 assertTrue(otroRectangulo.esVertical());
+	 }
+	 
+	 @Test
+	 void testUnCuadradoTieneLadoYUbicacion() {
+		 assertEquals(cuadrado.getLado(), 4);
+	 }
+	 
+	 @Test
+	 void testUnCuadradoCalculaSuPerimetro() {
+		 assertEquals(cuadrado.getPerimetro(), 16);
 	 }
 
 }
