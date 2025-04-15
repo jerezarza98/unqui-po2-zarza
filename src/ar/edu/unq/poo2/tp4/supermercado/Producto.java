@@ -1,0 +1,35 @@
+package ar.edu.unq.poo2.tp4.supermercado;
+
+public class Producto {
+	private String nombre;
+	private double precio;
+	private boolean esPrecioCuidado;
+	
+	public Producto(String nombre, double precio) {
+		this.nombre = nombre;
+		this.precio = precio;
+		this.esPrecioCuidado = false;
+	}
+	
+	public Producto(String nombre, double precio, boolean esPrecioCuidado) {
+		this.nombre = nombre;
+		this.precio = precio;
+		this.esPrecioCuidado = esPrecioCuidado;
+	}
+	
+	public String getNombre() {
+		return this.nombre;
+	}
+	
+	public double getPrecio() {
+		return this.precio;
+	}
+	
+	public boolean esPrecioCuidado() {
+		return this.esPrecioCuidado;
+	}
+	
+	public void aumentarPrecio(double precio) {
+		this.precio += precio;
+	}
+}
