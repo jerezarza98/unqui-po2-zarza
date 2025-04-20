@@ -1,10 +1,10 @@
-package unq.tp4.mercado;
+package unq.tp5.mercado;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import ar.edu.unq.poo2.tp4.mercado.ProductoEmpresa;
+import ar.edu.unq.poo2.tp5.mercado.ProductoEmpresa;
 
 class ProductoEmpresaTest {
 
