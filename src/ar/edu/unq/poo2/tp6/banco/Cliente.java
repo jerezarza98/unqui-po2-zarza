@@ -1,4 +1,4 @@
-package ar.edu.unq.poo2.tp6;
+package ar.edu.unq.poo2.tp6.banco;
 
 public class Cliente {
 	

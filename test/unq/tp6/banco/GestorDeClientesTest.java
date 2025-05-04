@@ -1,13 +1,13 @@
-package unq.tp6;
+package unq.tp6.banco;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import ar.edu.unq.poo2.tp6.Cliente;
-import ar.edu.unq.poo2.tp6.GestorDeClientes;
-import ar.edu.unq.poo2.tp6.GestorDeClientesInterface;
+import ar.edu.unq.poo2.tp6.banco.Cliente;
+import ar.edu.unq.poo2.tp6.banco.GestorDeClientes;
+import ar.edu.unq.poo2.tp6.banco.GestorDeClientesInterface;
 
 class GestorDeClientesTest {
 	

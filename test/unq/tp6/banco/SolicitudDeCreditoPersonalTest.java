@@ -1,14 +1,14 @@
-package unq.tp6;
+package unq.tp6.banco;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import ar.edu.unq.poo2.tp6.Cliente;
-import ar.edu.unq.poo2.tp6.EvaluadorDeCreditoInterface;
-import ar.edu.unq.poo2.tp6.EvaluadorDeCreditoPersonal;
-import ar.edu.unq.poo2.tp6.SolicitudDeCredito;
+import ar.edu.unq.poo2.tp6.banco.Cliente;
+import ar.edu.unq.poo2.tp6.banco.EvaluadorDeCreditoInterface;
+import ar.edu.unq.poo2.tp6.banco.EvaluadorDeCreditoPersonal;
+import ar.edu.unq.poo2.tp6.banco.SolicitudDeCredito;
 
 class SolicitudDeCreditoPersonalTest {
 	
